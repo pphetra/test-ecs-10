@@ -1,0 +1,11 @@
+execution:
+- concurrency: 200
+  ramp-up: 10s
+  hold-for: 20s
+  scenario: quick-test
+
+
+scenarios:
+  quick-test:
+    requests:
+    - http://localhost:3000/transfer
