@@ -26,6 +26,7 @@ export class AppController {
       const amount = Math.floor(Math.random() * 1000);
       const tid = Math.floor(Math.random() * 10000000);
 
+      console.log(`${fromId} ${toId} ${amount}, ${tid}`);
       await selectBalance.run(
         {
           aid: fromId,
